@@ -8,7 +8,7 @@ public class TicTacToe {
 	public static void main(String[] args) {
 		GameState initialState = new GameState(BLUE, new Player[SIZE][SIZE][SIZE]);
 		//explore(initialState);
-		System.out.println("From blank board, " + winner(initialState) + " wins.");
+		System.out.println("From blank board of size " + SIZE + ", " + BLUE + " starting, " + cachedWinner(initialState, 0) + " wins.");
 	}
 
 	public static void explore(GameState state) {
