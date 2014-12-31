@@ -67,8 +67,8 @@ public class GameState {
 				}
 			}
 		}
-		// Diagonals on a straight plane
-		// Diagonals on a diagonal plane
+		// TODO: Diagonals on a straight plane
+		// TODO: Diagonals on a diagonal plane
 
 		return null;
 	}
@@ -116,6 +116,8 @@ public class GameState {
 
 		return new GameState(nextPlayer.opposite(), newBoard);
 	}
+
+	// TODO: Method to normalise board (find which of 8 equivalent boards is smallest by some metric?)
 
 	@Override
 	public boolean equals(Object other) {
